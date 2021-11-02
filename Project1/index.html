@@ -1,73 +1,567 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- https://codepen.io/ موقع للافكار -->
+<!-- رابط الموقع المصمم-->
+<!-- https://preview.colorlib.com/theme/creative-agency/index.html -->
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learn CSS</title>
-    <!-- 3)External Stylesheet -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Alt+(up,down for move the code) -->
-    <!-- 1) Internal Stylesheet-->
-    <style>
-
-    </style>
+    <title>Project 1</title>
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+<!-- c+tab = comment or ctrl+/= comment-->
 
 <body>
-    <!-- What is Css -->
-    <!-- Style Sheet is file that write codes for css -->
-    <!-- Cascading when write css properties for any repeat element will latest property is appear but every one is excute -->
-    <h1>Learn CSS == Cascading Style Sheet</h1>
+    <!-- Header -->
+    <div class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <!-- draggable="false" حتى من اضغط على الصورة ميفتحها باي صفحة -->
+                    <img src="images/logo-alt.webp" alt="Logo Image" draggable="false">
+                </div>
+                <ul class="nav">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#prices">Prices</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li class="dropdown">
+                        <a href="#blog">Blog</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#blog post">blog post</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+            <!-- ./header-content -->
+        </div>
+        <!-- ./container -->
+    </div>
+    <!-- ./header -->
+    <!-- Home Section -->
+    <div class="home">
+        <div class="overlay">
+            <div class="home-contenet">
+                <!--capital تسويها  css و بال small يفضل تكون  capital اي شي  HTML لا تكتب بال  -->
+                <h1 class="title">we are creative agency</h1>
+                <p class="home-desc">
+                    Morbi mattis at nunc. Duis viverra diam non justo. In nis1. Nullam sit amet magna gravida vehicula. Mauris tincidunt sem sed arcu. Nunc posuere
+                </p>
+                <button class="btn btn-start hover-opacity">Get Started!</button>
+                <button class="btn btn-learn hover-opacity">Learn more</button>
+            </div>
+            <!-- ./home-contenet -->
+        </div>
+        <!-- ./overlay -->
+    </div>
+    <!-- ./home -->
+    <!-- Section Header -->
+    <!-- <div class="section-header">
+        <h2 class="section-title">welcome to website</h2>
+        <span class="line"></span>
+    </div> -->
+    <!-- About Section -->
+    <div class="about pd-y">
+        <div class="section-header">
+            <h2 class="section-title">welcome to website</h2>
+            <span class="line"></span>
+        </div>
+        <!-- ./section-header -->
+        <!--و احدد عدد من المكانات و اكتب الشي المتكرر alt حتى احدد اكثر من خطوة فاضغط  -->
+        <div class="container">
+            <div class="about-content">
+                <div class="about-item  ltr-effect">
+                    <i class="icon fa fa-cogs fa-2x"></i>
+                    <h2 class="about-item-title">fully customizible</h2>
+                    <p class="about-item-desc">Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet.</p>
+                    <a class="about-item-link" href="#">read more</a>
+                </div>
+                <!-- ./about-item -->
+                <div class="about-item  ltr-effect mg">
+                    <i class="icon fa fa-magic fa-2x"></i>
+                    <h2 class="about-item-title">fully customizible</h2>
+                    <p class="about-item-desc">Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet.</p>
+                    <a class="about-item-link" href="#">read more</a>
+                </div>
+                <!-- ./about-item -->
+                <div class="about-item ltr-effect">
+                    <i class="icon fa fa-mobile fa-2x"></i>
+                    <h2 class="about-item-title">fully customizible</h2>
+                    <p class="about-item-desc">Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet.</p>
+                    <a class="about-item-link" href="#">read more</a>
+                </div>
+                <!-- ./about-item -->
+            </div>
+            <!-- ./about-content -->
+        </div>
+        <!-- ./container -->
+    </div>
+    <!-- ./about -->
+    <!-- Portfolio -->
+    <div class="portfolio pd-y">
+        <div class="section-header">
+            <h2 class="section-title">featured works</h2>
+            <span class="line"></span>
+        </div>
+        <div class="container">
+            <div class="portfolio-content">
+                <div class="portfolio-item">
+                    <img src="images/work/work1.webp" alt="portfolio">
+                    <div class="layer-content">
+                        <div class="layer-info">
+                            <span class="category">category</span>
+                            <h3 class="layer-content-title">Lorem ipsum dolor</h3>
+                            <a href="#"><i class="fa fa-edit"></i></a>
+                            <a href="#"><i class="fa fa-search"></i></a>
+                        </div>
+                    </div>
+                    <!-- .layer-content -->
+                </div>
+                <div class="portfolio-item mg">
+                    <img src="images/work/work2.webp" alt="portfolio">
+                    <div class="layer-content">
+                        <div class="layer-info">
+                            <span class="category">category</span>
+                            <h3 class="layer-content-title">Lorem ipsum dolor</h3>
+                            <a href="#"><i class="fa fa-edit"></i></a>
+                            <a href="#"><i class="fa fa-search"></i></a>
+                        </div>
+                    </div>
+                    <!-- .layer-content -->
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/work/work3.webp" alt="portfolio">
+                    <div class="layer-content">
+                        <div class="layer-info">
+                            <span class="category">category</span>
+                            <h3 class="layer-content-title">Lorem ipsum dolor</h3>
+                            <a href="#"><i class="fa fa-edit"></i></a>
+                            <a href="#"><i class="fa fa-search"></i></a>
+                        </div>
+                    </div>
+                    <!-- .layer-content -->
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/work/work4.webp" alt="portfolio">
+                    <div class="layer-content">
+                        <div class="layer-info">
+                            <span class="category">category</span>
+                            <h3 class="layer-content-title">Lorem ipsum dolor</h3>
+                            <a href="#"><i class="fa fa-edit"></i></a>
+                            <a href="#"><i class="fa fa-search"></i></a>
+                        </div>
+                    </div>
+                    <!-- .layer-content -->
+                </div>
+                <div class="portfolio-item mg">
+                    <img src="images/work/work5.webp" alt="portfolio">
+                    <div class="layer-content">
+                        <div class="layer-info">
+                            <span class="category">category</span>
+                            <h3 class="layer-content-title">Lorem ipsum dolor</h3>
+                            <a href="#"><i class="fa fa-edit"></i></a>
+                            <a href="#"><i class="fa fa-search"></i></a>
+                        </div>
+                    </div>
+                    <!-- .layer-content -->
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/work/work6.webp" alt="portfolio">
+                    <div class="layer-content">
+                        <div class="layer-info">
+                            <span class="category">category</span>
+                            <h3 class="layer-content-title">Lorem ipsum dolor</h3>
+                            <a href="#"><i class="fa fa-edit"></i></a>
+                            <a href="#"><i class="fa fa-search"></i></a>
+                        </div>
+                    </div>
+                    <!-- .layer-content -->
+                </div>
+            </div>
+            <!-- ./about-content -->
+        </div>
+        <!-- ./container -->
+    </div>
+    <!-- offer Section -->
+    <div class="offer pd-y">
+        <div class="section-header">
+            <h2 class="section-title">what we offer</h2>
+            <span class="line"></span>
+        </div>
+        <!-- ./section-header -->
+        <div class="container">
+            <div class="offer-content">
+                <div class="offer-item ltr-effect">
+                    <i class="icon fa fa-diamond fa-2x"></i>
+                    <h2 class="offer-item-title">app development</h2>
+                    <p class="offer-item-desc">Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero.</p>
+                </div>
+                <!-- ./offer-item -->
+                <div class="offer-item mg ltr-effect">
+                    <i class="icon fa fa-rocket fa-2x"></i>
+                    <h2 class="offer-item-title">app development</h2>
+                    <p class="offer-item-desc">Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero.</p>
+                </div>
+                <!-- ./offer-item -->
+                <div class="offer-item ltr-effect">
+                    <i class="icon fa fa-cogs fa-2x"></i>
+                    <h2 class="offer-item-title">app development</h2>
+                    <p class="offer-item-desc">Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero.</p>
+                </div>
+                <!-- ./offer-item -->
+                <div class="offer-item ltr-effect">
+                    <i class="icon fa fa-diamond fa-2x"></i>
+                    <h2 class="offer-item-title">app development</h2>
+                    <p class="offer-item-desc">Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero.</p>
+                </div>
+                <!-- ./offer-item -->
+                <div class="offer-item mg ltr-effect">
+                    <i class="icon fa fa-pencil fa-2x"></i>
+                    <h2 class="offer-item-title">app development</h2>
+                    <p class="offer-item-desc">Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero.</p>
+                </div>
+                <!-- ./offer-item -->
+                <div class="offer-item ltr-effect">
+                    <i class="icon fa fa-flask fa-2x"></i>
+                    <h2 class="offer-item-title">app development</h2>
+                    <p class="offer-item-desc">Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero.</p>
+                </div>
+                <!-- ./offer-item -->
+            </div>
+            <!-- ./offer-content -->
+        </div>
+        <!-- ./container -->
+    </div>
+    <!-- ./offer -->
+    <!-- Services Section -->
+    <div class="service pd-y">
+        <div class="container">
+            <div class="service-item">
+                <div class="section-header">
+                    <h2 class="section-title">why choose us</h2>
+                    <span class="line"></span>
+                </div>
+                <!-- ./service-header -->
+                <p class="service-item-desc">Molestie at elementum eu facilisis sed odio. Scelerisque in dictum non consectetur a erat. Aliquam id diam maecenas ultricies mi eget mauris. Ultrices sagittis orci a scelerisque purus.</p>
+                <ul class="service-list">
+                    <li><i class="fa fa-check fa-fw"></i>Quis varius quam quisque id diam vel quam elementum.</li>
+                    <li><i class="fa fa-check fa-fw"></i>Mauris augue neque gravida in fermentum.</li>
+                    <li><i class="fa fa-check fa-fw"></i>Orci phasellus egestas tellus rutrum.</li>
+                    <li><i class="fa fa-check fa-fw"></i>Nec feugiat nisl pretium fusce id velit ut tortor pretium.</li>
+                </ul>
+                <!-- ./service-list -->
+            </div>
+            <!-- ./service-item -->
+            <div class="service-item">
+                <div class="service-item-img">
+                    <img src="images/about/about2.webp" alt="about2">
+                </div>
+                <ul class="service-bollets">
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <!-- ./container -->
+    </div>
+    <!-- ./service -->
+    <!-- number Section -->
+    <div class="numbers">
+        <div class="overlay">
+            <div class="container">
+                <div class="numbers-items">
+                    <div class="number-item">
+                        <i class="icon fa fa-users fa-2x"></i>
+                        <h3 class="number-item-title">451</h3>
+                        <span class="number-item-text">Happy clients</span>
+                    </div>
+                    <div class="number-item">
+                        <i class="icon fa fa-trophy fa-2x"></i>
+                        <h3 class="number-item-title">12</h3>
+                        <span class="number-item-text">Awards won</span>
+                    </div>
+                    <div class="number-item">
+                        <i class="icon fa fa-coffee fa-2x"></i>
+                        <h3 class="number-item-title">154K</h3>
+                        <span class="number-item-text">Cups of Coffee</span>
+                    </div>
+                    <div class="number-item">
+                        <i class="icon fa fa-file fa-2x"></i>
+                        <h3 class="number-item-title">45</h3>
+                        <span class="number-item-text">Projects completed</span>
+                    </div>
+                </div>
+                <!-- ./numbers-items -->
+            </div>
+            <!-- ./container -->
+        </div>
+        <!-- ./overlay -->
+    </div>
+    <!-- ./numbers -->
+    <!-- Pricing Section -->
+    <div class="pricing pd-y">
+        <div class="section-header">
+            <h2 class="section-title">pricing table</h2>
+            <span class="line"></span>
+        </div>
+        <div class="container">
+            <div class="pricing-plans">
+                <div class="pricing-item tb-effect">
+                    <span class="pricing-item-text">basic plan</span>
+                    <div class="pricing-item-permonth">
+                        <h3 class="doller">$9</h3>
+                        <span class="month">/ month</span>
+                    </div>
+                    <ul class="pricing-list">
+                        <li>1GB Disk Space</li>
+                        <li>100 Email Account</li>
+                        <li>24/24 Support</li>
+                    </ul>
+                    <button class="pricing-item-purchase">Purchase now</button>
+                </div>
+                <!-- ./pricing-item -->
+                <div class="pricing-item tb-effect mg">
+                    <span class="pricing-item-text">basic plan</span>
+                    <div class="pricing-item-permonth">
+                        <h3 class="doller">$9</h3>
+                        <span class="month">/ month</span>
+                    </div>
+                    <ul class="pricing-list">
+                        <li>1GB Disk Space</li>
+                        <li>100 Email Account</li>
+                        <li>24/24 Support</li>
+                    </ul>
+                    <button class="pricing-item-purchase">Purchase now</button>
+                </div>
+                <!-- ./pricing-item -->
+                <div class="pricing-item tb-effect">
+                    <span class="pricing-item-text">basic plan</span>
+                    <div class="pricing-item-permonth">
+                        <h3 class="doller">$9</h3>
+                        <span class="month">/ month</span>
+                    </div>
+                    <ul class="pricing-list">
+                        <li>1GB Disk Space</li>
+                        <li>100 Email Account</li>
+                        <li>24/24 Support</li>
+                    </ul>
+                    <button class="pricing-item-purchase">Purchase now</button>
+                </div>
+                <!-- ./pricing-item -->
+            </div>
+            <!-- ./pricing-plans -->
+        </div>
+        <!-- ./container -->
+    </div>
+    <!-- ./pricing -->
+    <!-- Testimonial Section-->
+    <div class="testimonial">
+        <div class="overlay">
+            <div class="container">
+                <div class="testimonial-content">
+                    <div class="testimonial-item">
+                        <div class="testimonial-toplayer">
+                            <img src="images/Testimonial/perso1.webp" alt="perso1">
+                            <h3>john doe</h3>
+                            <span>web designer</span>
+                        </div>
+                        <!-- ./testimonial-toplayer -->
+                        <p class="testimonial-desc">
+                            Molestie at elementum eu facilisis sed odio. Scelerisque in dictum non consectetur a erat. Aliquam id diam maecenas ultricies mi eget mauris.
+                        </p>
+                    </div>
+                    <!-- ./testimonial-item -->
+                    <div class="testimonial-item">
+                        <div class="testimonial-toplayer">
+                            <img src="images/Testimonial/perso2.webp" alt="perso2">
+                            <h3>john doe</h3>
+                            <span>web designer</span>
+                        </div>
+                        <!-- ./testimonial-toplayer -->
+                        <p class="testimonial-desc">
+                            Molestie at elementum eu facilisis sed odio. Scelerisque in dictum non consectetur a erat. Aliquam id diam maecenas ultricies mi eget mauris.
+                        </p>
+                    </div>
+                    <!-- ./testimonial-item -->
+                </div>
+                <!-- ./testimonial-content -->
+            </div>
+            <!-- ./container -->
+        </div>
+        <!-- ./overlay -->
+    </div>
+    <!-- ./testimonial -->
+    <!-- Team Section-->
+    <div class="team pd-y">
+        <div class="section-header">
+            <h2 class="section-title">our team</h2>
+            <span class="line"></span>
+        </div>
+        <!-- ./section-header -->
+        <div class="container">
+            <div class="team-content">
+                <div class="team-item tb-effect">
+                    <div class="team-img">
+                        <img src="images/team/team1.webp" alt="team1">
+                        <div class="team-overlay">
+                            <a href=""><i class="fa fa-facebook"></i></a>
+                            <a href=""><i class="fa fa-google-plus"></i></a>
+                            <a href=""><i class="fa fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-info-title">John Doe</h3>
+                        <span class="team-info-text">Web Designer</span>
+                    </div>
+                </div>
+                <div class="team-item tb-effect mg">
+                    <div class="team-img">
+                        <img src="images/team/team2.webp" alt="team2">
+                        <div class="team-overlay">
+                            <a href=""><i class="fa fa-facebook"></i></a>
+                            <a href=""><i class="fa fa-google-plus"></i></a>
+                            <a href=""><i class="fa fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-info-title">John Doe</h3>
+                        <span class="team-info-text">Web Designer</span>
+                    </div>
+                </div>
+                <div class="team-item tb-effect">
+                    <div class="team-img">
+                        <img src="images/team/team3.webp" alt="team3">
+                        <div class="team-overlay">
+                            <a href=""><i class="fa fa-facebook"></i></a>
+                            <a href=""><i class="fa fa-google-plus"></i></a>
+                            <a href=""><i class="fa fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-info-title">John Doe</h3>
+                        <span class="team-info-text">Web Designer</span>
+                    </div>
+                </div>
+            </div>
+            <!-- ./team-content -->
+        </div>
+        <!-- ./container -->
+    </div>
+    <!-- ./team -->
+    <!-- Blog Section -->
+    <div class="blog pd-y">
+        <div class="section-header">
+            <h2 class="section-title">recents news</h2>
+            <span class="line"></span>
+        </div>
+        <div class="container">
+            <div class="blog-content">
+                <div class="blog-item">
+                    <div class="blog-item-img">
+                        <img src="images/blog/blog1.webp" alt="blog1">
+                    </div>
+                    <div class="blog-info">
+                        <ul class="blog-list">
+                            <li>
+                                <i class="fa fa-user"></i> John doe
+                            </li>
+                            <li>
+                                <i class="fa fa-clock-o"></i> 18 Oct
+                            </li>
+                            <li>
+                                <i class="fa fa-comments"></i> 57
+                            </li>
+                        </ul>
+                        <!--./blog-list -->
+                        <h3 class="blog-title">Molestie at elementum eu facilisis sed odio</h3>
+                        <p class="blog-desc">Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed. Nunc non blandit massa enim nec.</p>
 
-    <!-- Why Using Css Because is soul for website -->
+                        <a class="blog-link" href="">Read more</a>
+                    </div>
+                    <!-- ./blog-info -->
+                </div>
+                <!-- ./blog-item -->
+                <div class="blog-item mg">
+                    <div class="blog-item-img">
+                        <img src="images/blog/blog2.webp" alt="blog2">
+                    </div>
+                    <div class="blog-info">
+                        <ul class="blog-list">
+                            <li>
+                                <i class="fa fa-user"></i> John doe
+                            </li>
+                            <li>
+                                <i class="fa fa-clock-o"></i> 18 Oct
+                            </li>
+                            <li>
+                                <i class="fa fa-comments"></i> 57
+                            </li>
+                        </ul>
+                        <!--./blog-list -->
+                        <h3 class="blog-title">Molestie at elementum eu facilisis sed odio</h3>
+                        <p class="blog-desc">Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed. Nunc non blandit massa enim nec.</p>
 
-    <!-- Where Writing Css Three place -->
+                        <a class="blog-link" href="">Read more</a>
+                    </div>
+                    <!-- ./blog-info -->
+                </div>
+                <!-- ./blog-item -->
+                <div class="blog-item">
+                    <div class="blog-item-img">
+                        <img src="images/blog/blog3.webp" alt="blog3">
+                    </div>
+                    <div class="blog-info">
+                        <ul class="blog-list">
+                            <li>
+                                <i class="fa fa-user"></i> John doe
+                            </li>
+                            <li>
+                                <i class="fa fa-clock-o"></i> 18 Oct
+                            </li>
+                            <li>
+                                <i class="fa fa-comments"></i> 57
+                            </li>
+                        </ul>
+                        <!--./blog-list -->
+                        <h3 class="blog-title">Molestie at elementum eu facilisis sed odio</h3>
+                        <p class="blog-desc">Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed. Nunc non blandit massa enim nec.</p>
 
-    <!-- 2) Inline Stylesheet -->
-    <p style="color:red">this is paragraph</p>
-    <small>small</small>
-    <div>
-        This is div This is div This is div This is div This is div This is div This is div This is div This is div This is div This is div This is div This is div This is div This is div This is div This is div This is div This is div This is div This is div
-        This is div This is div This is div
+                        <a class="blog-link" href="">Read more</a>
+                    </div>
+                    <!-- ./blog-info -->
+                </div>
+                <!-- ./blog-item -->
+            </div>
+            <!-- ./blog-content -->
+        </div>
+        <!-- ./container -->
     </div>
-    <div class="one">
-        First
+    <!-- ./blog -->
+    <!-- ./Footer Section -->
+    <div class="footer">
+        <img src="images/logo-alt.webp" alt="logo">
+        <ul class="footer-links">
+            <li><a href="#" class="hover-opacity"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#" class="hover-opacity"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#" class="hover-opacity"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#" class="hover-opacity"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#" class="hover-opacity"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#" class="hover-opacity"><i class="fa fa-youtube"></i></a></li>
+        </ul>
+        <p class="copyright">Copyright &copy; 2021. All Rights Reserved. Designed by Colorlib</p>
     </div>
-    <div class="two">
-        Second
-    </div>
-    <div class="three">
-        Third
-    </div>
-    <p class="text">This is paragraph This is paragraph This is paragraph This is paragraph This is paragraph This is paragraph This is paragraph This is paragraph This is paragraph This is paragraph This is paragraph This is paragraph This is paragraph This is paragraph
-    </p>
-    <p class="font">This is paragraph This is paragraph This is paragraph This is paragraph This is paragraph This is paragraph This is paragraph This is paragraph This is paragraph This is paragraph This is paragraph This is paragraph This is paragraph This is paragraph
-    </p>
-    <ul>
-        <li>home</li>
-        <li>home</li>
-        <li>home</li>
-    </ul>
-    <table border>
-        <caption>Title for Table</caption>
-        <tr>
-            <td>HTML</td>
-            <td>Css</td>
-            <td>JS</td>
-        </tr>
-        <tr>
-            <td>HTML</td>
-            <td>Css</td>
-            <td>JS</td>
-        </tr>
-        <tr>
-            <td>HTML</td>
-            <td>Css</td>
-            <td>JS</td>
-        </tr>
-    </table>
 </body>
 
 </html>
