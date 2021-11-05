@@ -100,7 +100,7 @@ opacity مثلا هنا  trasition اسم الخاصية الي تريدها ب�
 :root {
     --maincolor: #6195FF;
     --graycolor: #999;
-    --bg-gray: #f9f9f9;
+    /* --bg-gray: #f9f9f9; */
     --whitecolor: #fff;
 }
 
@@ -377,9 +377,10 @@ background: red;
 
 /*3.3- Portfolio Section */
 
-.portfolio {
+
+/* .portfolio {
     background: var(--bg-gray);
-}
+} */
 
 .portfolio-content {
     overflow: hidden;
@@ -528,9 +529,10 @@ background: red;
 
 /* 3.5- Service Section */
 
-.service {
+
+/* .service {
     background: var(--bg-gray);
-}
+} */
 
 .service-item {
     width: 50%;
@@ -851,9 +853,10 @@ background: red;
 
 /*3.10- Blog Page*/
 
-.blog {
+
+/* .blog {
     background: #f8f8f8;
-}
+} */
 
 .blog-content {
     overflow: hidden;
