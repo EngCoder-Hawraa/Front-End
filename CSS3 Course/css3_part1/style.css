@@ -1,0 +1,178 @@
+/* Rounded Courner */
+
+.div1 {
+    width: 100px;
+    height: 100px;
+    background: green;
+    margin: 50px auto;
+    border-radius: 50%;
+    /* -webkit-border-radius: 10px 50px 30px; */
+    /* border-radius: 10px 50px 30px; */
+    /* border-top-left-radius: 70px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 2px; */
+}
+
+.div1:hover {
+    border-radius: 0;
+}
+
+
+/* background */
+
+
+/* body {
+    height: 600px;
+    background-image: url('../images/index.png');
+    background-repeat: no-repeat;
+    background-size: cover; */
+
+
+/* background-size: contain; */
+
+
+/* } */
+
+.div2 {
+    width: 100px;
+    height: 100px;
+    background: #f50;
+    background-image: url('../images/cat.jpeg');
+    background-size: cover;
+    padding: 20px;
+    border: 5px dotted green;
+    /* background-origin: border-box; */
+    background-clip: content-box
+}
+
+
+/* Shadow */
+
+
+/* box-shadow */
+
+.article {
+    height: 200px;
+    width: 200px;
+    margin: 50px auto;
+    background: #000;
+    /* box-shadow: h-shadow v-shadow blur spread color inset;  معناها الشادو داخلي inset اذا اكتب  */
+    box-shadow: 2px 3px 5px 2px fuchsia, 30px 7px 9px navy inset;
+    /* box-shadow: -30px -20px 5px 2px #000; */
+    border-radius: 20px;
+}
+
+
+/* text-shadow */
+
+span {
+    /* text-shadow: h-shadow v-shadow blure color; */
+    /* text-shadow: 6px 5px 4px maroon; */
+    text-shadow: 6px 5px 4px maroon, 6px 7px 8px seagreen;
+    font-size: 55px;
+}
+
+
+/* Gradient */
+
+
+/* 1. linear
+   2. radial
+*/
+
+.gradient {
+    width: 400px;
+    height: 400px;
+    margin: 50px auto;
+    background: #f50;
+    /* background: -webkit-linear-gradient(direction,firstcolor,thirdcolor,.....more color); */
+    /* background: -webkit-linear-gradient(top left, yellow, green, red); */
+    /* background: -webkit-linear-gradient(top, yellow 50%, green 50%) */
+    /* background: -webkit-radial-gradient(60%, red, orange); */
+    /* background: -webkit-radial-gradient(circle, red, orange, blue); */
+    /* background: -webkit-radial-gradient(20px, closest-corner, orange, blue); */
+    background: -webkit-radial-gradient(20px, farthest-corner, orange, blue)
+}
+
+
+/* css3 Text 
+1. text-overflow 2.word-wrap 3.word-break
+*/
+
+.css3-text {
+    width: 100px;
+    /* height: 200px; */
+    border: 1px solid #000;
+    /* nowrap يعني النص يكون يم بعض */
+    /* white-space: nowrap; */
+    /* overflow: hidden; */
+    /* /* clip or ellipsis */
+    /* text-overflow: ellipsis; */
+    /* word-wrap: normal; */
+    /* word-break: break-all; */
+}
+
+
+/* transform 2D */
+
+.transform-2D {
+    width: 100px;
+    height: 100px;
+    background: #f50;
+    margin: 100px auto;
+    /* transform: translate(x, y); */
+    /* transform: translate(30px, 20px); */
+    /* transform: rotate(50deg); */
+    /*و كذلك نفس الشي في الارتفاع scale يضرب العرض الاصلي بالعرض لل */
+    /* transform: scale(2, .5); */
+    /* transform: skew(10deg, 24deg); */
+    /* matrix(ScaleX,SkewY,SkewX,ScaleY,transX,transY) */
+    transform: matrix(1, 2.1, 0, 2, 100, 100);
+}
+
+
+/* translate-3D */
+
+
+/* body {
+    perspective: 500px;
+} */
+
+.translate-3D {
+    width: 100px;
+    height: 100px;
+    background: darkred;
+    margin: 100px auto;
+    /* transform: translate3d(20px, 30px, 16px);
+    transform: rotatex(70deg); */
+    /* transform: ScaleX(80deg); */
+    /* transform: skewX(40deg); */
+    transform: matrix3d(30deg, 20deg);
+}
+
+
+/* Perspective */
+
+body {
+    perspective: 600px;
+    perspective-origin: 100% 0;
+}
+
+.perspective {
+    width: 100px;
+    height: 100px;
+    background: rgb(17, 39, 233);
+    margin: 100px auto;
+    transform: translateZ(40px) rotateX(30deg);
+}
+
+
+/* transform-origin */
+
+.transform-origin {
+    width: 100px;
+    height: 100px;
+    background: aqua;
+    margin: 100px auto;
+}
