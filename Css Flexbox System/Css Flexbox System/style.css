@@ -1,109 +1,101 @@
-        /* How to write comment */
-        /* <!-- How To .. Syntax  --> */
-        /* selector is tags html
-Rule
-1- selector{
-    property:value;//called declaration
+/* For Arabic language */
+
+
+/* html {
+    direction: rtl;
 } */
-        
-        small {
-            color: green;
-        }
-        
-        body {
-            height: 5000px;
-        }
-        /* Background*/
-        
-        div {
-            /* 1) background-color default value is transperent or white */
-            /* background-color: red; */
-            /* ctrl+ - or ctrl+ + (zoom in or zoom out) */
-            /* 2) background-image */
-            /* background-image: url(../images/img.jpg); */
-            /* height: 500px; */
-            /* 3) background-repeat  default value is repeat*/
-            /* background-repeat: no-repeat; */
-            /* background-repeat: repeat-x; */
-            /* background-repeat: repeat-y; */
-            /* 4) background-attachment default value is is scroll*/
-            /* background-attachment: scroll; */
-            /* background-attachment: fixed; */
-            /* height: 250px; */
-            /* 5) background-position*/
-            /* background-position: 10px 20px; */
-            /* background-position: top right; */
-            /* background-position: top left; */
-            /* background-position: center; */
-            /* 6)background */
-            /* background:red * or any value  */
-            background: red url(../images/img.jpg) no-repeat scroll center;
-        }
-        /* width & height */
-        
-        .one {
-            color: green;
-            width: 200px;
-            min-width: 100px;
-            min-height: 200px;
-            background: blue;
-        }
-        /* margin & padding & border & outline */
-        
-        .two {
-            color: white;
-            width: 200px;
-            background: orangered;
-            margin: 10px 20px 50px 15px;
-            padding: 15px;
-            border: 2px solid red;
-            outline: 5px solid orange
-        }
-        /* Text properties */
-        
-        .text {
-            text-align: center;
-            color: green;
-            letter-spacing: 10px;
-            word-spacing: 20px;
-            line-height: 30px;
-            text-decoration: underline;
-            text-transform: uppercase;
-            /* text-decoration: line-through */
-            /* overflow: scroll; */
-            overflow: hidden;
-        }
-        
-        html {
-            direction: rtl;
-        }
-        /* font */
-        /* font size default 16px */
-        /* font weight 100-400 normal,700-900 bold */
-        
-        .font {
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: 20px;
-            font-weight: 900;
-            font-style: oblique;
-            font: normal 900 30px tajawal
-        }
-        /* list */
-        /* list-style-type default (disc) */
-        
-        ul {
-            list-style-type: circle;
-            /* list-style-image: url(../images/img.jpg); */
-            list-style-position: outside
-        }
-        /* Table */
-        
-        table {
-            width: 250px;
-            height: 250px;
-            caption-side: bottom;
-        }
-        
-        td {
-            vertical-align: center;
-        }
+
+body {
+    background: #AAA;
+    margin: 0;
+}
+
+.content {
+    width: 100%;
+    max-width: 960px;
+    margin: auto;
+}
+
+.flex-container {
+    background: #fff;
+    /*1.display: flex الحل الافضل */
+    display: flex;
+    height: 600px;
+    /*2.Flex-Direction item الي ننطي للابناءكما في كلاس float الحل لل 
+    [row(default),row-reverse,column,column-reverse] */
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    /* 5.Flex-wrap[no-wrap,wrap,wrap-reverse] */
+    /* flex-wrap: wrap-reverse; */
+    /* flex-flow is row = flex-basis is initial width
+    & flex-flow is column = flex-basis is initial height */
+    /* 8.flex-flow(flex-direction flex-wrap)*/
+    /* flex-flow: row-reverse nowrap; */
+    /* 9. [justify-content and Axis حسب قيمته flex-flowيعمل مع ال 
+    [flex-start,flex-end,center,space-around,space-between] */
+    /* flex-flow: row; */
+    /* justify-content: space-between  */
+    /* 10.align-items and axis حسب قيمته flex-flowيعمل مع ال */
+    /* align-items: center */
+    /* 11. align-self */
+    /* align-self: flex-start; */
+    /* 12.align-content (flex-wrap تعمل مع ) */
+    /* align-content: space-around; */
+}
+
+
+/* الحل الثاني */
+
+
+/* .flex-container:after {
+    content: "";
+    display: block;
+    clear: both;
+} */
+
+.item {
+    min-width: 100px;
+    height: 100px;
+    /* 7.flex (flex-grow,flex-shrink,flex-basis) هي اختصار لل */
+    /* flex: 1 0 100px; */
+    /*6. flex-basis بس هذا افضل ميسوي تمديد للصفحة بحيث يكفي الصفحة
+    flex-basis=(min-width and min-height) */
+    /* flex-basis: 400px; */
+    /* width: 200px; */
+    /* float: left; */
+    /*3. Flex-grow تتحكم بالعرض للعنصر */
+    /* flex-grow: 1; */
+}
+
+.first {
+    background: fuchsia;
+    /*13. element order */
+    /* order: 2; */
+    /* 4.Flex-shrink (العنصر يتقلص responsiveالي منطيته اعلى قيمة هو الي يصغر بال)*/
+    /* flex-grow: 1; */
+    /* flex-shrink: 1; */
+    /* flex-basis: 100px; */
+}
+
+.second {
+    background: darkmagenta;
+    /* flex-grow: 2; */
+    /* flex-shrink: 2; */
+    /* flex-basis: 200px; */
+}
+
+.third {
+    background: deeppink;
+    /* flex-grow: 3; */
+    /* flex-shrink: 3; */
+}
+
+
+/* الحل الاول */
+
+
+/* .clear {
+    clear: both;
+} */
