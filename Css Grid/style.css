@@ -1,0 +1,150 @@
+body {
+    text-align: center;
+}
+
+.grid-container {
+    /* حتى اتحكم بالموقع صفوف و اعمدة */
+    display: grid;
+    /* [1. Control Columns] */
+    /* يقسم الى اعمدة */
+    /* grid-template-columns: 33% 33% 33%; */
+    /* grid-template-columns: repeat(4, 25%); */
+    /* 1fr قسمهم بالتساوي
+    2fr .....ضعف و هكذا*/
+    /* grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr; */
+    /*[2. Control Rows]*/
+    /* grid-template-rows: 200px 150px 130px 120px; */
+    /* grid-template-rows: repeat(3, 200px); */
+    /* [3. grid-auto-rows] */
+    /* grid-auto-rows: minmax(200px, auto); */
+    /* 4.gap */
+    grid-template-columns: repeat(4, 1fr);
+    /* column-gap: 20px;
+    row-gap: 20px; */
+    /*gap يجمع بين الخواص لل */
+    gap: 20px;
+    /* Justify Items التحكم افقي*/
+    /* justify-items: start; */
+    /* justify-items: right; */
+    /* justify-items: center; */
+    /* Align items التحكم عمودي*/
+    align-items: flex-end
+}
+
+.grid-container>.item {
+    padding: 30px;
+    background: #333;
+    color: #fff;
+    margin: 7px 0;
+}
+
+.grid-nested {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+/* grid lines */
+
+
+/* .item1 { 
+    grid-column: 1/2; 
+    grid-column-start: 1;
+    grid-column-end: 3;
+}  */
+
+
+/* .item6 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 4;
+} */
+
+.grid-container1 {
+    display: grid;
+    gap: 10px;
+    grid-template-areas: "header header header header" "nav nav main main" "aside aside main main" "footer footer footer footer";
+}
+
+.grid-container1>* {
+    padding: 30px;
+    background: darkred;
+    color: #fff;
+}
+
+.header1 {
+    grid-area: header;
+}
+
+.nav1 {
+    grid-area: nav;
+}
+
+.aside1 {
+    grid-area: aside;
+}
+
+.main1 {
+    grid-area: main;
+}
+
+.footer1 {
+    grid-area: footer;
+}
+
+.grid-container2 {
+    display: grid;
+    gap: 10px;
+    grid-template-areas: "hd hd hd hd" "ad mn mn mn" "ad mn mn mn" "ad mn mn mn" "ft ft ft ft";
+}
+
+.grid-container2>* {
+    padding: 30px;
+    background: blue;
+    color: #fff;
+}
+
+.ul-list {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.header2 {
+    grid-area: hd;
+    background: crimson;
+}
+
+.main2 {
+    grid-area: mn;
+    background: green;
+}
+
+.aside2 {
+    grid-area: ad;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.aside2 p {
+    border: 1px solid #000;
+    line-height: 100px;
+}
+
+.footer2 {
+    grid-area: ft;
+    background: gold;
+}
+
+.social {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+li {
+    margin: 0 5px;
+}
