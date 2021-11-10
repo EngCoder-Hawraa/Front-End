@@ -1,0 +1,395 @@
+/* 
+    *CSS Selectors
+    ---------------
+    1-Basic Selector
+    -ID Selector
+    -Class Selector
+    -Type Selector
+    -Attribute Selector:
+    [attr name]
+    [attr = value]
+    [attr ^= value] examle:[attr ^=foo,attr ^=foo-bar,attr ^=foobar,attr ^=foo bar]
+    [attr |= value] examle:[attr ^=foo,attr ^=foo-bar]
+    [attr ~= value]
+    [attr $= value]
+    [attr *= value]
+    [attr ^= value i]
+    2-Combinator Selectors
+    -descebdant Selector
+    -adjacent Sibling Selector
+    -general Sibling Selector
+    -Direct child Selector
+    3-Pseudo Classes Selector
+    4-Pseudo Element Selector
+    -first-line
+    -first-letter
+    -:after & :before
+    -::selection
+*/
+
+
+/* body {
+    background: #EEE;
+} */
+
+h1 {
+    background: #000;
+    color: #fff;
+    width: 400px;
+    margin: auto;
+    padding: 15px;
+    text-align: center;
+}
+
+
+/* 1. Basic Selector */
+
+
+/*ID Selector */
+
+#first {
+    color: #f50;
+}
+
+#second {
+    background: #999;
+}
+
+
+/*Class Selector */
+
+.first {
+    color: #080;
+}
+
+
+/*Type Selector */
+
+p,
+span {
+    color: #f50;
+}
+
+
+/*-Attribute Selector: */
+
+
+/* [attr name] */
+
+[href] {
+    color: #f50;
+}
+
+p[target] {
+    background: #080;
+}
+
+
+/* [attr = value] */
+
+[target="_blank"] {
+    background: #768;
+}
+
+a[x="y"] {
+    border: 3px solid #080;
+    border-radius: 3px;
+}
+
+
+/* [attr ^= value] (^ Start with)*/
+
+[attr ^=foo] {
+    background: navy;
+}
+
+
+/* /* [attr |= value] (| Start with)*/
+
+[attr |=foo] {
+    border: 10px dotted green;
+}
+
+
+/* [attr ~= value] مستقلة value يتنفذ اذا كانت ال*/
+
+[href~="www"] {
+    background: crimson;
+}
+
+
+/* [attr *= value (* contain في اي مكان)] */
+
+[href*="www"] {
+    border-radius: 15px;
+}
+
+
+/* [attr $= value] End*/
+
+[href$="com"] {
+    background: darkred;
+    color: white;
+}
+
+
+/* [attr ^= value i يكون غير حساس سوا كانت كابتل او سمول فهو عادي] */
+
+[href ^="com" i] {
+    color: indigo;
+}
+
+
+/*2. Combinator Selectors */
+
+
+/* descebdant Selector */
+
+div p {
+    background: #080;
+}
+
+
+/* adjacent Sibling Selector (+) الاخ التالي له مباشرة*/
+
+div+p {
+    background: darkred;
+}
+
+
+/* general Sibling Selector (ّّّ~) كل الاخوة للعنصر الذي بعده*/
+
+div~p {
+    background: fuchsia
+}
+
+
+/* Direct child Selector (>) الابناء المباشرة للعنصر*/
+
+div>p {
+    background: lawngreen
+}
+
+section>div+p>a {
+    background: #000;
+}
+
+
+/* 3.Pseudo Classes Selector */
+
+
+/* any */
+
+:-webkit-any(section, main, article) h2 {
+    color: #f50;
+}
+
+
+/* :checked
+   :disabled
+   :empty
+   :enabled
+*/
+
+input:checked {
+    width: 150px;
+}
+
+input:disabled {
+    background: #f50;
+}
+
+input:enabled {
+    background: #080
+}
+
+p:empty {
+    width: 100px;
+    height: 50px;
+    background: #000;
+}
+
+
+/* :focus
+   :hover
+   :active
+*/
+
+a:hover {
+    color: #768;
+    background: darkred;
+}
+
+a:active {
+    color: #080;
+}
+
+a:focus {
+    background: blue;
+}
+
+
+/* :in-range
+   :out-of-range
+*/
+
+input:in-range {
+    color: white;
+}
+
+input:out-of-range {
+    background: red;
+}
+
+
+/* :valid
+   :invalid
+*/
+
+input:valid {
+    background: #080;
+    border: 2px solid #000;
+}
+
+input:invalid {
+    background: red;
+    border: 7px solid #f50;
+}
+
+
+/* :not()
+   :placeholder-shown
+*/
+
+p:not(.first) {
+    background: #768;
+}
+
+input:placeholder-shown {
+    border: 4px double darkred;
+    color: blue;
+    background: #fff;
+}
+
+
+/* :root (html معناها تاك)
+   :lang()
+*/
+
+:root {
+    background: darkred;
+}
+
+:lang(ar) {
+    color: #fff;
+}
+
+
+/* :required
+   :optional
+*/
+
+input:required {
+    background: #fff;
+    border: none;
+    background: rgb(55, 34, 241);
+}
+
+input:optional {
+    background: #fff;
+    border: none;
+    color: rgb(251, 9, 158);
+}
+
+
+/* :read-write
+   :read-only
+*/
+
+input:read-only {
+    width: 200px;
+    height: 40px;
+}
+
+input:read-write {
+    width: 300px;
+    height: 40px;
+    margin: 20px;
+}
+
+
+/* :target
+   :user-select
+ */
+
+.target {
+    display: none;
+}
+
+.target {
+    -webkit-user-select: none;
+}
+
+:target {
+    display: block;
+}
+
+
+/* first-child & last-child*/
+
+div p:first-child {
+    color: red;
+    background: #fff;
+}
+
+div p:last-child {
+    color: darkgoldenrod;
+    background: #fff;
+}
+
+
+/* first-of-type & last-of-type */
+
+div span:first-of-type {
+    background: blue;
+    color: #fff;
+}
+
+div span:last-of-type {
+    background: yellowgreen;
+    color: #fff;
+}
+
+
+/* only-child & only-of-type */
+
+div p:only-of-type {
+    color: rgb(255, 0, 191);
+}
+
+
+/* nth-child(n or 2n,3n,2n+1 and others or any number or even/odd or ) &  nth-of-type()*/
+
+
+/* p:nth-child(n) {
+    color: yellow;
+} */
+
+p:nth-child(even) {
+    color: yellow;
+}
+
+p:nth-of-type(odd) {
+    color: #fff;
+}
+
+
+/* :nth-last-child(n or 2n,3n,2n+1 and others or any number or even/odd or ) &  nth-last-of-type()*/
+
+p:nth-last-child(2n+1) {
+    color: mediumblue;
+}
+
+p:nth-last-of-type(2n) {
+    color: chartreuse;
+}
