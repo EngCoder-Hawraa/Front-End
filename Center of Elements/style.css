@@ -1,0 +1,316 @@
+/* To Center of Elements:
+    1-Horizontally
+    -inline level element --use text-align:center
+    -block level element --use margin:auto
+    -more than one block level element --use display:inline-block or display:flex or margin:auto
+    2-vertically:
+    -inline level element
+      -single line
+      -multiple lines
+    -block level element
+     -know height of element
+     -unknow height of element
+     -use flexbox
+
+    3-both horizontal & vertical
+     -element of fixed width & height
+     -unknow width & height
+     -use flexbox
+     -use grid
+*/
+
+
+/*========= 1-Horizontally =========*/
+
+
+/* inline level element */
+
+div,
+nav {
+    text-align: center;
+}
+
+
+/* block level element  */
+
+.block {
+    width: 100px;
+    height: 100px;
+    background: #222;
+    margin: 0 auto;
+    color: #fff;
+}
+
+
+/* more than one block level element 
+1. display: flex; للاب (with) justify-content: center; ايضا للاب
+OR 2. display: inline-block; للابن(with) text-align: center; للاب
+3. margin:auto للتوسيط تحت بعض رأسيا
+*/
+
+section {
+    display: flex;
+    justify-content: center;
+    /* text-align: center; */
+}
+
+.div {
+    width: 50px;
+    height: 50px;
+    margin: 2px;
+    /* margin: 2px auto; */
+    background: #080;
+    color: #fff;
+    /* display: inline-block; */
+}
+
+
+/*========= 2.vertically =========*/
+
+
+/* inline level element 
+1.use padding
+2.use line-height
+*/
+
+
+/* single line */
+
+main {
+    background: #378;
+    padding: 10px;
+}
+
+main a {
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 10px;
+}
+
+.p {
+    width: 200px;
+    height: 200px;
+    background: #000;
+    color: #fff;
+    line-height: 200px;
+}
+
+
+/* multiple lines 
+1.padding
+2.table vertical-align:middle 
+3.flex
+4.ghost-element not explain
+*/
+
+table {
+    width: 100px;
+    height: 200px;
+    background: #f50;
+    /* هاي الطريقة تلقائيا ياخذها العنصر */
+    /* vertical-align: middle; */
+}
+
+.vertical {
+    display: table;
+    width: 100px;
+    height: 200px;
+    background: #090;
+    color: #fff;
+}
+
+.vertical .item {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+/* flex */
+
+.flex {
+    width: 100px;
+    height: 300px;
+    padding: 20px 0;
+    background: #800;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* ghost-element not explain */
+
+.ghost {
+    width: 200px;
+    height: 250px;
+    background: #876;
+    color: #fff;
+}
+
+.ghost:before {
+    content: "";
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    width: 2px;
+    background: #800;
+}
+
+.ghost p {
+    color: #000;
+    width: 100px;
+    padding: 10px;
+    background: #4567;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+/* block level element */
+
+
+/* know height of element */
+
+.know-height {
+    width: 100px;
+    height: 250px;
+    background: #ddd;
+    position: relative;
+}
+
+.know-height p {
+    height: 80px;
+    background: #090;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+}
+
+
+/* unknow height of element */
+
+.unknow-height {
+    width: 200px;
+    height: 350px;
+    background: #c67897;
+    position: relative;
+}
+
+.unknow-height p {
+    background: #090;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    margin: 0;
+    transform: translate(0, -50%);
+}
+
+
+/* use flexbox */
+
+.flex-box {
+    width: 200px;
+    height: 350px;
+    background: #005;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flex-box p {
+    background: #090;
+    padding: 10px;
+    width: 100px;
+    height: 80px;
+}
+
+
+/* 3-both horizontal & vertical */
+
+
+/* element of fixed width & height */
+
+.fixed-width-height {
+    position: relative;
+    height: 250px;
+    background: #00f;
+}
+
+.fixed-width-height p {
+    width: 150px;
+    margin: 0;
+    height: 100px;
+    padding: 10px;
+    background: #000;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -60px;
+    margin-left: -85px;
+}
+
+
+/* unknow width & height */
+
+.unknow-width-height {
+    position: relative;
+    height: 250px;
+    background: #00f;
+}
+
+.unknow-width-height p {
+    margin: 0;
+    padding: 10px;
+    background: #000;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* use flexbox */
+
+.both-flex-box {
+    width: 60%;
+    height: 200px;
+    background: #000;
+    color: #ddd;
+    display: flex;
+    /* horizontal */
+    justify-content: center;
+    /* flex-direction: column; */
+    /* vertical */
+    align-items: center;
+}
+
+.both-flex-box p {
+    width: 250px;
+    height: 50px;
+    padding: 10px;
+    background: #00f;
+}
+
+
+/* use grid */
+
+.grid {
+    width: 60%;
+    height: 200px;
+    background: #000;
+    color: #ddd;
+    display: grid;
+}
+
+.grid p {
+    width: 250px;
+    height: 50px;
+    padding: 10px;
+    background: #00f;
+    margin: auto;
+}
