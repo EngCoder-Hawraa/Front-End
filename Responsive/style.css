@@ -1,0 +1,102 @@
+/*======= Responsive web Design ========
+what is Responsive web Design
+what is The viewport
+what is a Media Query
+Images
+Frameworks & Grid System
+*/
+
+
+/* body {
+    background: maroon;
+} */
+
+
+/* Mobile */
+
+
+/* @media screen and (max-width:400px) {
+    body {
+        background: green;
+    }
+} */
+
+
+/* Tablet */
+
+
+/* @media screen and (min-width:401px) and (max-width:768px) {
+    body {
+        background: orangered;
+    }
+} */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    text-align: center;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 15px;
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.images {
+    text-align: center;
+}
+
+.images img {
+    width: 24%
+}
+
+
+/* Tablet */
+
+@media screen and (max-width:768px) {
+    .images img {
+        width: 48%
+    }
+    nav {
+        background: #000;
+    }
+    nav ul li a {
+        color: #fff;
+        font-size: 15px;
+    }
+}
+
+
+/* mobile */
+
+@media screen and (max-width:400px) {
+    .images img {
+        width: 94%;
+        margin-bottom: 1%;
+    }
+    nav ul {
+        margin: 0 0 2% 0;
+        padding: 0;
+    }
+    nav ul li {
+        display: block;
+    }
+    nav ul li:hover {
+        background: #333;
+        cursor: pointer;
+    }
+}
+
+.img-responsive {
+    max-width: 100%;
+}
