@@ -1,0 +1,59 @@
+==========================================
+//Section 5
+//Json
+//JSON:JavaScript Object Notation
+//JSON is a syntax for storing data
+//JSON is text,written with JavaScript object Notation
+//Data is in name/value pairs
+//Data is separated by commas
+//Curly braces hold Objects{}
+//Square Prackets hold arrays[]
+//Datatype
+//a string
+//a number
+//an object(JSON object)
+//an array
+//an boolean
+//null
+
+//JSON values cannot be one of the following data types:
+//a function
+//a date
+//undefined
+
+//-JSON.parse convert str to object
+//-JSON.stringify convert obj to str
+====================================
+//Section 6
+//Objects
+//use new
+//use object literals
+//Object.create
+//Ajax
+
+
+Update A web page without reloading the page
+Request data from a server -after the page has loaded
+Receive data from a server -after the page has loaded
+Send data to a server -in the background
+
+AJAX is a technique for accessing web servers from a web page.XHR=XMLHttpRequest
+
+AJAX stands for Asynchronous JavaScript And XML.
+
+
+Steps:
+1.An event occurs in a web page (the page is loaded,a button is clicked)
+2.An XMLHttpRequest object is created by JavaScript
+3.The XMLHttpRequest object sends a request to a web server
+4.The server proccesses the request
+5.The server sends a response back to the web page
+6.The response is read by JavaScript
+7.Proper action (like page update) is performed by JavaScript
+
+
+
+
+
+
+

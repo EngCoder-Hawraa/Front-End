@@ -1,0 +1,16 @@
+- add to capfirst
+-remove from cart
+-login register logout 
+-filter by size || name
+-search by name 
+-add to favourite 
+-create product
+-edit product
+-remove product
+-don't doublicate items in car
+-product details 
+-my products
+-my views
+-profile
+-edit profile
+-rtl

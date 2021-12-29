@@ -1,0 +1,71 @@
+//Section 13
+/*
+-Types of Errors
+-Strict Mode
+-Array Helper Method[map,filter,....]
+*/
+
+
+//Types of Errors In JavaScript
+/*
+    -syntax Error: syntax errors, also called parsing errors   window.print(;
+    -Runtime Error: Runtime errors, also called expressions, occur during execution  window.printme();
+        (calling method in runtime that does not exist)
+    -Logical Error
+*/
+
+
+// Strict Mode
+/*
+    Strict mode makes it easier to write "secure" JavaScript.
+    Strict mode is declared by adding "use strict"; to the beginning of a strictor a function
+*/
+
+//Array Helper Method[map,filter,....]
+//forEach
+//def: method calls a function once for each element in an array,in order.
+//syntax : array.forEach(function(currentValue, index, arr), thisValue)
+
+
+
+//map
+//def: method creates a a new array with the results of calling a function for every array element.
+//syntax : array.map(function(currentValue, index, arr), thisValue)
+
+
+//filter
+//def: the filter() method creates an array filled with all array elements that pass a test.
+//note: filter() does not change the original array.
+//syntax : array.filter(function(currentValue, index, arr), thisValue)
+
+
+//reduce
+//def: method reduces the array to a single value.
+//note: this method does not change the original array.
+//syntax : array.reduce(function(total, currentValue, currentIndex, arr), initialValue)
+
+
+
+//some
+//def: method checkes if any of the elements in an array pass a test.
+//if true returns a true value & does not check the remaining values // if false : return false
+//note: some() does not change the original array.
+//syntax : array.some(function(currentValue, index, arr),thisValue)
+
+//every
+
+
+//find
+//def: method returns the value of the first element in an array that pass a test.
+//if true returns a true the value of that array element & does not check the remaining values // if false : return false return undefined
+//note: find() does not change the original array.
+//syntax : array.find(function(currentValue, index, arr),thisValue)
+
+
+
+//find index
+//def: method returns the index of the first element in an array that pass a test.
+//if true returns index of element & does not check the remaining values // if false : return false return -1
+//syntax : array.findIndex(function(currentValue, index, arr),thisValue)
+
+//sort

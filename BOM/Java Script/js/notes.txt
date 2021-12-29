@@ -1,0 +1,61 @@
+Section 10
+//BOM
+/* The Dom is :
+    the Document Object Model, which deals with the document, the HTML
+    elements themselves ],e.g. document and all traversal you would do in
+    it, events, etc
+
+/* The Bom is :
+    the Browser Object Model, which deals with browser components aside 
+    from the document, like history, location, navigator and screen
+
+//1. window
+/*
+    innerWidth
+    innerHeight
+    confirm
+    prompt
+    open
+    close
+*/
+
+//2. Screen
+/*
+    -screen.width
+    -availWidth : Property returns the width of the visitor's screen, in pixels, minus interface
+    features like the Windows Taskbar.
+
+    -screen.height
+    -availHeight Property returns the height of the visitor's screen, in pixels, minus interface
+    features like the Windows Taskbar.
+*/
+
+//location
+/*
+    window.location.href returns the href (URL) of rhe current page
+    window.location.hostname returns the domain name of the web host
+    window.location..pathname returns the path and filename of the current page
+    window.location.protocol returns the web protocol used (http: https:)
+*/
+
+//History
+/*
+    history.back() -same as clicking back in the browser
+    history.forward() -same as clicking forward in the browser
+*/
+
+//Navigator
+/*
+    navigator.appName
+    navigator.appCodeName
+    navigator.platform
+    navigator.appVersion
+    navigator.language
+    navigator.onLine
+*/
+
+//Timing(setTimeout ,setInterval)
+//clearInterval
+===================================
+
+

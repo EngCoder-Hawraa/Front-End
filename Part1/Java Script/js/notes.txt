@@ -1,0 +1,39 @@
+// Section 1
+// What js
+// Uses js
+// Where to js
+// Output
+// Statement
+// Syntax
+// Comments
+// Variables
+// Data Types[Number,Boolean,String,Array,Object,Undefined,Null]
+=======
+//uses js
+// Mobile App [ionic,react native,flutter]
+// games [Pixl,lychee.js,PlayCanvas]
+// Server App [node,mongodb,express]
+// Ddesktop App  [electron,Nwjs,AppJS,Meteor,Proton Native]
+// Web App
+
+
+
+========================================
+Section 2
+// Operators
+// Arithmetic Operator + - * / % ++ -- ** +- 
+// Asignment Operator = += *= -= /= %=
+// Logical Operator && || !
+// If condition
+// Switch
+=========================================
+Section 3
+//Function
+//Function Expressions
+//Events
+//Loop
+==========================================
+
+
+
+

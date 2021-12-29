@@ -1,0 +1,27 @@
+//Section 11
+    -Var, Let, Const
+    //[Scope, Hoisting, ReAssigned, ReDeclared]
+
+    -Hoisting
+
+
+    -hoist();
+        1.some order of Hoisting
+        2.Variable assignment over function declaration
+        3.Function declarations over variable declarations
+    -scope
+        1.Global variables are those declared outside of a block
+        2.Local Variables are those declared inside of a block
+
+    -Arrow Function
+        () => {}
+======================================
+//Section 12
+//Default Params && Spread Operator && Destruction
+//Template String `test ${expression}`
+/* this
+    //- this inside Global Scope
+    //-> this === window
+*/
+
+//call

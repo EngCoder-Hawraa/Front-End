@@ -1,0 +1,61 @@
+/*
+Document Object Model (Object Oriented Representation)
+
+
+JavaScript can change all the HTML elements in the page
+JavaScript can change all the HTML attributes in the page
+JavaScript can change all the CSS Styles in the page
+JavaScript can remove existing HTML elements and attributes
+JavaScript can add new HTML elements and attributes
+JavaScript can react to all existing HTML events in the page
+JavaScript can create new HTML events in the page
+
+
+*/
+
+//document [URL,title,doctype,head,all,body,images,links,forms]
+
+//getElementsById,innerText,textContent,Styles
+//getElementsByClassName
+//style elements
+
+//getElementsByTagName
+//style elements
+//querySelector
+//querySelectorAll
+//style elements
+//traversing
+//parentNod ParentElement childNoes children firstChild firstElementChild lastChild lastElementChild
+//nextSibling nextElementSibling previous previousElement
+
+
+//Creating
+//CreateElement createTextNode addclass addId addAttribute append insert
+
+
+//events
+/*
+addEventListener
+DomEvent
+click
+dblclick
+mousedown
+mouseup
+mouseenter
+mouseleave
+mouseover
+mouseout
+mousemove
+keydown
+keyup
+keypress
+focus
+blur
+cut
+paste
+input
+change
+input
+submit
+
+*/

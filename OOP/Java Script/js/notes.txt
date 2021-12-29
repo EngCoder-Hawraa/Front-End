@@ -1,0 +1,88 @@
+OOP == object oriented programming
+PART 1
+//procedural programming ---every pice of code into function and variables
+
+//OOP group every related function and variable into a unit => object
+
+//every var called property and every function called method
+
+//Encapsulation == group every related function and variable into a unit(reduce complexity + 
+increase reusability)
+
+//Abstraction = don't care about details, care about what it do (reduce complexity + isolate
+impact of changes)
+
+//inheritance == mechanism that allows you to eliminate redundant code
+
+//polymorphism = poly = many | morph = form == many forms
+
+//allows you to get read of Long if and else or switch cases (refactor ugly switch case)
+
+=====================Object========================
+// 1) define object literal{}
+// 2) factory function
+// 3) constructor function
+
+//constructor property
+//Let c = {} //c.constructor = Object()
+//Let a =[] //a.constructor = Array()
+/Let f = function(){} //f.constructor = Function()
+
+//adding item to object in Array
+//add => .ar []
+//delete => //delete
+//object.keys => return all key in object in Array
+//if you want to find key in objectuse if ('key' in object)
+//if you iterate into keys use for in loop for (key in obj)
+
+=================================================
+PART 2
+//Abstraction
+//Classical Inheritance
+//Prototype
+//Prototypical Inheritance
+//Descriptor
+//Constructor Prototype
+//Instance or Own \ Prototype(member / property)
+/*
+    student(child/Sub) (is A) Person(Parent/Super)
+    car(child/Sub) (is A) Vehicle(Parent/Super)
+*/
+
+=================================================
+PART 3
+/* @format */
+
+//prototype example
+//call for inheritance
+//extend function for inheritance
+//overiding
+//polymorphism
+//inheritance problems(don't using inheritance hierarchy)
+//create single objects and inherit from
+
+
+=================================================
+PART 4
+//class and types of syntax
+//Static and instant Methods and properties
+//this Keyword
+//private properties
+//setters and getters
+//inheritance and method overiding
+
+
+
+
+=================================================
+PART 5
+//WeakMap: is a dictionary whers keys are object and values are be anything, its called
+weakmap because keys 
+
+//keys are weak if there is no reference to this keys no be grapage collector
+//private properties
+
+
+
+
+

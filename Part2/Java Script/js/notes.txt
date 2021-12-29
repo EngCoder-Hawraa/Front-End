@@ -1,0 +1,10 @@
+==========================================
+//Section 4
+//Simple Cart App
+//String Methods [split,slice,toUpperCase,trim,indexOf]
+//Array Methods [join,pop,push,shift,unshift,length,concat,slice]
+//Math [Math.round,Math.pow(x,y),Math.sqrt(x),Math.ceil(x),Math.floor(x),Math.random()]
+
+
+
+

@@ -1,0 +1,12 @@
+// nunber,boolean,array,string,null,object
+[{
+        "name": "hawraa",
+        "age": 27,
+        "tel": 12334556
+    },
+    {
+        "name": "sura",
+        "age": 26,
+        "tel": 12334556
+    }
+]
