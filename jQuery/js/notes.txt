@@ -1,0 +1,34 @@
+//What is jQuery?
+//jQuery features
+//download jQuery
+//Syntax
+//Selectors
+//Events(click,mouseenter,mouseup and others)
+
+
+=======================
+
+//Effects
+//[hide, show,toggle ,fade(fadeIn,fadeOut,fadeToggle), slide(slideDown,slideUp,slideToggle), animate, stop]
+//callback
+//chaining سلسلة
+
+
+========================
+
+//Dom Manipulation
+//Get, Set
+//-add [append, prepend, after, before]  -remove [remove, empty]
+//css [addClass, removeClass, toggleClass, .css]
+//dimension [width, innerWidth, outerWidth(true)]
+
+========================
+
+//Traversing
+//Ancestors [parent, parents, parentsUntil]
+//Descendants [children, find]
+//Siblings [siblings, next, nextAll, nextUntil, prev, prevAll,prevUntil]
+//filter [first, last, eq, filter, not]
+
+
+//jQuery Ajax
