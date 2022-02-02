@@ -1,0 +1,7 @@
+//Components
+//Props & state
+//Props (properties and also like attribute in html) 
+//state = private object related to class || component
+
+//رابط مهم
+https://reactjs.org/docs/dom-elements.html

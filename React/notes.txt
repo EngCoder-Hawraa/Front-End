@@ -1,0 +1,67 @@
+//1. npm init -y
+//node -v
+//1. [babel]
+//npm install -g babel-cli 
+//2.babel-preset-react(js to xml) ,babel-preset-env(var and others js to react )
+//npm install babel-preset-env babel-preset-react
+//3. و يحول من جافا سكربت الى ريأكت عند عمل تغييرات بملف الجافا سكربت الثانوي و نريد يتحول اتوماتيكيا للرئيسي
+كل مرة
+//npx babel src/index.js --out-file=public/js/main.js --presets=env,react
+مرة واحدة و يسمع دائما تلقائيا 
+//npx babel src/index.js --out-file=public/js/main.js --presets=env,react --watch
+
+//ex1:
+// var title = 'title';
+// var fun = (arg) => {
+//     if (arg) {
+//         return "Hello React"
+//     }
+// };
+
+// var ele = ( <
+//     div >
+//     <
+//     h1 id = "item" >
+//     This is { title ? title : "Title " }
+//     Item <
+//     /h1>   <
+//     span className = "item" > {
+//         title && "Yes"
+//     } < /span><
+//     p > This is P { 1 + 1 } < /p>  <
+//     span > This is Span { fun(title) } < /span> <
+//     span > { fun() } < /span>
+
+//     <
+//     /
+//     div >
+// );
+// ReactDOM.render(ele, document.getElementById("app"));
+
+
+
+// ================
+//ex2:
+// var number = 0;
+// var increase = () => {
+//     number++;
+//     render();
+//     // console.log(number);
+// };
+
+// function render() {
+//     var ele = ( < div >
+//         The number { number } <
+//         button onClick = { increase } > add one < /button>  < /
+//         div >
+//     );
+//     ReactDOM.render(ele, document.getElementById("app"));
+// }
+// render();
+===============================
+//Forms & Input
+//Events => onChange + onSubmit
+//map with array
+//dealing with arrays in jsx
+//list items
+//Small App : ToggleText like in jquery
